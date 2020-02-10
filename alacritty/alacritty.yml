@@ -1,10 +1,10 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
-#shell:
-#  program: /bin/bash
-#  args: 
-#    -  -c
-#    -  neofetch
+shell:
+  program: /bin/bash
+  args: 
+    -  -c
+    -  neofetch && exec bash
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -358,7 +358,7 @@ schemes:
       cyan:    '0x93a1a1' # base1
       white:   '0xfdf6e3' # base3
 
-colors: *mkp
+colors: *mkd
 # Colors (Tomorrow Night Bright)
 #colors:
   # Default colors
@@ -467,7 +467,7 @@ colors: *mkp
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.2
+background_opacity: 0.85
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
