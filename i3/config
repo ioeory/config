@@ -27,14 +27,17 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec   alacritty 
-#bindsym $mod+Return exec terminal
+#bindsym $mod+Return exec   alacritty 
+#bindsym $mod+Return exec deepin-terminal
+bindsym $mod+Return exec mate-terminal
+
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
+#bindsym $mod+d exec --no-startup-id dmenu_recency
+bindsym $mod+d exec --no-startup-id dmenu_run
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
