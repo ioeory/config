@@ -4,7 +4,7 @@ shell:
   program: /bin/bash
   args: 
     -  -c
-    -  neofetch && exec bash
+    -  exec bash
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
